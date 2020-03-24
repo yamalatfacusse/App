@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App</title>
+<link href="css/framework7.min.css" rel="stylesheet">
+<link href="css/material-icons.css" rel="stylesheet">
+<link href="css/f7-icons.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="color-theme-orange">
+    
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+      
+      	<section class="panel panel-left panel-cover">
+			<h3 class="block-title">Menú Navegación</h3>
+			<div class="block">
+				<article class="list">
+					<ul>
+						<li>
+							<a href="/desserts/" class="item-link item-content panel-close">
+								<div class="item-media">
+									<i class="fas fa-cookie-bite"></i>
+								</div>
+								<div class="item-inner">
+								  Desserts
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/desserts/" class="item-link item-content panel-close">
+								<div class="item-media">
+									<i class="fas fa-coffee"></i>
+								</div>
+								<div class="item-inner">
+									Drinks
+								</div>
+							</a>
+						</li>
+						
+						<li>
+							<a href="/desserts/" class="item-link item-content panel-close">
+								<div class="item-media">
+									<i class="fas fa-smile"></i>
+								</div>
+								<div class="item-inner">
+									Favorites
+								</div>
+							</a>
+						</li>
+						
+						<li>
+							<a href="/desserts/" class="item-link item-content panel-close">
+								<div class="item-media">
+									<i class="fas fa-utensil-spoon"></i>
+								</div>
+								<div class="item-inner">
+									Chefs
+								</div>
+							</a>
+						</li>
+						
+						<li>
+							<a href="/desserts/" class="item-link item-content panel-close">
+								<div class="item-media">
+									<i class="fas fa-pen"></i>
+								</div>
+								<div class="item-inner">
+									Recipes
+								</div>
+							</a>
+						</li>
+					</ul>
+				</article>
+				
+			</div>
+		</section>
+      
+
+      <div class="view view-main view-init">
+        <!-- Initial Page, "data-name" contains page name -->
+        <section data-name="home" class="page">
+
+          <!-- Top Navbar -->
+          <nav class="navbar">
+            <div class="navbar-inner">
+                <div class="left"><a href="#" class="link panel-open" data-panel="left"><em class="material-icons">menu</em></a></div>
+                <div class="title">Menu</div>
+            </div>
+          </nav>
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+            
+              <!--<h2 class="block-title">Tìtulo de Contenido</h2>
+              <div class="block block-strong">
+                  <p>Texto de contenido</p>
+              </div>-->
+              <article class="menu bg-coffee">
+                <a href="/desserts/">
+                      <div class="overlay"></div>
+                      <div class="texto">
+                          <h2>Desserts</h2>
+                          <p>La receta francesa recién horneda.</p>
+                      </div> 
+                </a>
+              </article>
+              <article class="menu bg-breakfast">
+                      <div class="overlay"></div>
+                      <div class="texto">
+                          <h2>Drinks</h2>
+                          <p>Lo preparamos a tu gusto.</p>
+                      </div>        
+              </article>
+             
+              <article class="menu bg-sandwiches">
+                      <div class="overlay"></div>
+                      <div class="texto">
+                          <h2>Wraps</h2>
+                          <p>Fresco, sano y saludable.</p>
+                      </div>        
+              </article>
+              
+          </div><!-- /page-content -->
+            
+        </section>
+          
+          
+      </div>
+    </div>
+    
+    
+    
+    <article class="popup popup-confirm">
+		
+		<div class="view">
+			<div class="page">
+			  <div class="page-content">
+					
+					<div class="block">
+					
+						<div class="icon-done">
+							<i class="material-icons">done</i>
+						</div>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, error!</p>
+						
+						<div class="row">
+							<a href="/home/" class="link button button-fill btn-verde popup-close">Thanks for your Order</a>
+							<a href="/coffee/" class="link button btn-gris popup-close">Continue Shopping</a>
+						</div>
+						
+				  	</div>
+					
+			  </div>
+			</div>
+	
+	</article>
+    
+    
+    <script src="js/framework7.min.js"></script>
+    <script src="js/my-app.js"></script>
+    
+</body>
+</html>
